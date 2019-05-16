@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		 body {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			z-index: -100;
+			right: 0;
+			bottom: 0;
+			background: url(image/background.jpg) no-repeat ;
+			background-size: cover;
+			overflow: hidden;
+}
+	</style>
+</head>
+<body>
+	<center>
+		<div class="central-div" style="top:7.5%">
+                    <form action="controller.jsp">
+                        <input type="hidden" name="page" value="register"> 
+				<table>
+					<tr>
+						<td colspan="2">
+							<center><h2>Register New User</h2></center>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>First Name</label>
+						</td>
+						<td>
+                                                    <input type="text" name="fname" class="text" placeholder="First Name">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Last Name</label>
+						</td>
+						<td>
+                                                    <input type="text"  name="lname" class="text" placeholder="Last Name">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<label>User Name</label>
+						</td>
+						<td>
+                                                    <input type="text" name="uname" class="text" placeholder="User Name">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>Email</label>
+						</td>
+						<td>
+                                                    <input type="email" name="email" class="text" placeholder="Email">
+						</td>
+					</tr>
+					
+					<tr>
+						<td>
+							<label>Password</label>
+						</td>
+						<td>
+                                                    <input type="password" name="pass" class="text" placeholder="Password">
+						</td>
+					</tr>
+					 
+                                        <tr>
+						<td>
+							<label>Contact No</label>
+						</td>
+						<td>
+                                                    <input type="text" name="contactno" class="text" placeholder="Contact No">
+						</td>
+					</tr>
+                                        <tr>
+						<td>
+							<label>City</label>
+						</td>
+						<td>
+                                                    <input type="text" name="city" class="text" placeholder="City">
+						</td>
+					</tr>
+                                        <tr>
+						<td>
+							<label>Address</label>
+						</td>
+						<td>
+                                                    <input type="text" name="address" class="text" placeholder="Address">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label>User Type</label>
+						</td>
+						<td style="color:white">
+                                                    <input type="radio" name="usertype" class="radio" value="student">Student
+                                                    <input type="radio" name="usertype" class="radio" value="teacher">Teacher
+                                                </td>
+                                        </tr>
+                                        <tr>
+						
+                                             <td colspan="2">
+							<center>
+							
+							<input type="submit" value="Register Now" class="button">
+							</center>
+                                            </td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</center>
+</body>
+</html>
